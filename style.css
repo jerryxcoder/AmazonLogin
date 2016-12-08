@@ -1,0 +1,162 @@
+ 
+body{
+ 	background-color: white;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+/*
+This is a type selector - more specific than universal, but still very generic
+*/
+h1{
+ 	font-size: 36px;
+ 	text-transform: uppercase;
+	letter-spacing: 50px;
+	word-spacing: 10px;
+}
+
+p{
+	font-size: small;
+	font-family: Arial, sans-serif;
+}
+section{
+	 color: blue;
+	 font-family: Arial, sans-serif;
+ }
+ div{
+	font-family: Arial, sans-serif;
+ }
+ span{
+	 color: lightgrey;
+ }
+
+/*
+This is a class selector - more specific than type selectors. use this to affect multiple specific elements in the same way.
+*/
+.awesome{
+	font-size: medium;
+}
+
+.border{
+ 	border-width: 1px;
+	border-style: solid;
+} 
+
+/*
+This is an ID selector - it is the most specific way to apply styles since it should only affect (at most) one element.
+*/
+#mylink{
+	font-family: Gabriola, "Courier New", Courier, monospace;
+	font-size: 67px;
+	font-style: oblique;
+	font-variant: small-caps;
+	font-weight: 700;
+
+}
+ 
+.boxDiv{
+	min-width: 300px;
+	max-width: 400px;
+	min-height: 50px;
+	margin: 20px auto;
+	border-style: solid;
+	border-width: 2px;
+	border-color: lightgrey;
+	padding: 20px;
+ 	overflow: auto;
+	
+ 	border-radius: 5px;
+	background-color: white;
+
+}
+#boxDiv2{
+	min-width: 300px;
+	max-width: 400px;
+	min-height: 50px;
+	margin: 20px auto;
+	border-style: none;
+	border-width: 2px;
+	border-color: none;
+	padding: 10px;
+ 	overflow: auto;
+	
+ 	border-radius: 5px;
+	background-color: white;
+}
+#span{
+	position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+}
+#rbutton1{
+	border-radius: 5px;
+	background: linear-gradient( #ffb84d,   #ff9900);
+	border-color: lightgrey
+}
+#rbutton2{
+	border-radius: 5px;
+	border-color: lightgrey
+ }
+.center{
+	text-align: center;
+}
+ 
+.col-1-3{
+	float: left;
+	padding-left: 10px;
+    }
+
+#fcol-1-3{
+	float: left;
+	padding-left: 50px;
+ }
+#fcol-2-3{
+	float: left;
+	padding-left: 20px;
+ }
+#fcol-3-3{
+	float: left;
+	padding-left: 20px;
+}
+
+#col-1-3{
+	float: left;
+   }
+ .col-2-3{
+	float: right;
+	color: blue;
+   }
+ 
+ .strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap; 
+}
+
+.strike > span {
+    position: relative;
+    display: inline-block;
+}
+
+.strike > span:before,
+.strike > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: lightgray;
+}
+
+.strike > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
